@@ -12,6 +12,7 @@ package projekpbo;
 public class LimasPersegi extends Persegi {
     // Atribut khusus untuk limas persegi
     public double tinggiLimas;
+    public double volumeLimas;
 
     // Constructor untuk LimasPersegi
     public LimasPersegi(double sisi, double tinggiLimas) {
@@ -23,8 +24,7 @@ public class LimasPersegi extends Persegi {
     @Override
     public double hitungVolume() {
         // Volume limas persegi = (1/3) * luas alas * tinggiLimas
-        return (1.0 / 3.0) * hitungLuas() * tinggiLimas;
+        volumeLimas = (1.0 / 3.0) * hitungLuas() * tinggiLimas;
+        return volumeLimas;
     }
 }
-
-

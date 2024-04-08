@@ -12,6 +12,7 @@ public class Segitiga extends Geometri2D {
     // Atribut khusus untuk segitiga
     public double alas;
     public double tinggi;
+    public double luasSegitiga;
 
     // Constructor untuk Segitiga
     public Segitiga(double alas, double tinggi) {
@@ -23,8 +24,7 @@ public class Segitiga extends Geometri2D {
     @Override
     public double hitungLuas() {
         // Rumus luas segitiga: 0.5 * alas * tinggi
-        return 0.5 * alas * tinggi;
+        luasSegitiga = 0.5 * alas * tinggi;
+        return luasSegitiga;
     }
 }
-
-

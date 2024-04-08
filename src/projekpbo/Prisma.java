@@ -12,6 +12,7 @@ package projekpbo;
 public class Prisma extends Segitiga {
     // Atribut khusus untuk prisma
     public double tinggiPrisma;
+    public double volumePrisma;
 
     // Constructor untuk Prisma
     public Prisma(double alas, double tinggi, double tinggiPrisma) {
@@ -23,8 +24,7 @@ public class Prisma extends Segitiga {
     @Override
     public double hitungVolume() {
         // Volume prisma segitiga = luas segitiga * tinggiPrisma
-        return hitungLuas() * tinggiPrisma;
+        volumePrisma = hitungLuas() * tinggiPrisma;
+        return volumePrisma;
     }
 }
-
-

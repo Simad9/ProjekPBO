@@ -12,6 +12,7 @@ package projekpbo;
 public class Persegi extends Geometri2D {
     // Atribut khusus untuk persegi
     public double sisi;
+    public double luasPersegi;
 
     // Constructor untuk Persegi
     public Persegi(double sisi) {
@@ -22,7 +23,7 @@ public class Persegi extends Geometri2D {
     @Override
     public double hitungLuas() {
         // Rumus luas persegi: sisi * sisi
-        return sisi * sisi;
+        luasPersegi = sisi * sisi;
+        return luasPersegi;
     }
 }
-
