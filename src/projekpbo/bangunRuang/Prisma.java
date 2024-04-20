@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projekpbo;
+package projekpbo.bangunRuang;
+
+import projekpbo.bangunDatar.Segitiga;
 
 /**
- *
+ * Wijdan : Ini prisma segitiga kan ya?
  * @author User
  */
 public class Prisma extends Segitiga {

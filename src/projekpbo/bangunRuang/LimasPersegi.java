@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projekpbo;
+package projekpbo.bangunRuang;
+
+import projekpbo.bangunDatar.Persegi;
 
 /**
- *
+ * Wijdan : Ini bisa disebut sebagai Limas Segiempat juga
  * @author User
  */
 public class LimasPersegi extends Persegi {
@@ -24,7 +26,9 @@ public class LimasPersegi extends Persegi {
     @Override
     public double hitungVolume() {
         // Volume limas persegi = (1/3) * luas alas * tinggiLimas
-        volumeLimas = (1.0 / 3.0) * hitungLuas() * tinggiLimas;
+        // volumeLimas = (1.0 / 3.0) * hitungLuas() * tinggiLimas;
+        luasPersegi = hitungLuas();
+        volumeLimas = (1.0 / 3.0) * luasPersegi * tinggiLimas;
         return volumeLimas;
     }
 }

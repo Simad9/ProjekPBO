@@ -1,0 +1,27 @@
+BangunDatar :
+JajarGenjang.java✅
+Persegi.java✅
+LayangLayang.java✅
+BelahKetupat.java✅
+Trapesium.java✅
+PersegiPanjang.java✅
+Lingkaran.java✅
+Segitiga.java✅
+Tembereng.java✅
+SektorLingkaran.java✅
+
+BanguRuang :
+PrismaJajarGenjang.Java✅
+BolaSetengahJajarGenjang.java✅
+Kubus.java✅
+LimasSegiEmpat.java✅
+PrismaTrapesium.java✅
+Balok.java✅
+Silinder.java✅
+Bola.java✅
+PrismaSegitiga✅
+BolaSetengahSegitiga.java✅
+BolaSetengahTembereng.java✅
+BolaSetengahSektorLingkaran.java✅
+
+https://chat.openai.com/share/33c8d52a-6246-4109-a0d3-3da2428a26ad
