@@ -4,13 +4,11 @@ import projekpbo.bangunDatar.Juring;
 
 public class BolaSetengahJuring extends Juring {
   // Atribut khusus untuk BolaSetengahJuring
-  public double tinggiBolaSetengahJuring;
   public double volumeBolaSetengahJuring;
 
   // Constructor untuk BolaSetengahJuring
-  public BolaSetengahJuring(double jariJari, double sudut, double tinggiBolaSetengahJuring) {
+  public BolaSetengahJuring(double jariJari, double sudut) {
     super(jariJari, sudut);
-    this.tinggiBolaSetengahJuring = tinggiBolaSetengahJuring;
   }
 
   // Implementasi metode hitungVolume() untuk BolaSetengahJuring
