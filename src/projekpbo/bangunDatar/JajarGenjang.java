@@ -13,14 +13,15 @@ import projekpbo.Geometri2D;
  */
 public class JajarGenjang extends Geometri2D {
     // Atribut khusus untuk jajar genjang
-    public double alas;
-    public double tinggi;
-    public double luasJajarGenjang;
+    private double alas;
+    private double tinggi;
+    private double luasJajarGenjang;
 
     // Constructor untuk JajarGenjang
     public JajarGenjang(double alas, double tinggi) {
         this.alas = alas;
         this.tinggi = tinggi;
+        luasJajarGenjang = hitungLuas();
     }
 
     // Implementasi metode hitungLuas() untuk jajar genjang
@@ -30,5 +31,8 @@ public class JajarGenjang extends Geometri2D {
         luasJajarGenjang = alas * tinggi;
         return luasJajarGenjang;
     }
+    // Getter untuk Luas Jajar Genjang
+    public double getLuasJajarGenjang() {
+        return luasJajarGenjang;
+    }
 }
-

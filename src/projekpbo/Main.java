@@ -22,7 +22,7 @@ public class Main {
         try {
             Segitiga segitiga = new Segitiga(5, 3);
             System.out.println("\n+ Segitiga \nalas = 5 & tinggi = 3");
-            System.out.println("Luas Segitiga : " + segitiga.hitungLuas());
+            System.out.println("Luas Segitiga : " + segitiga.getLuasSegitiga()); // mengambil nilai Luas Segitiga
         } catch (Exception e) {
             System.out.println("Maaf, Segitiga tidak bisa dibuat dengan nilai alas dan tinggi yang sama.");
         }
@@ -31,7 +31,7 @@ public class Main {
         try {
             Persegi persegi = new Persegi(4);
             System.out.println("\n+ Persegi \nsisi = 4");
-            System.out.println("Luas Persegi : " + persegi.hitungLuas());
+            System.out.println("Luas Persegi : " + persegi.getLuasPersegi()); // mengambil nilai Luas Persegi
         } catch (Exception e) {
             System.out.println("Maaf, Persegi tidak bisa dibuat dengan nilai sisi yang kurang dari 0.");
         }
@@ -40,7 +40,9 @@ public class Main {
         try {
             PersegiPanjang persegiPanjang = new PersegiPanjang(5, 3);
             System.out.println("\n+ Persegi \npanjang = 5 & lebar = 3");
-            System.out.println("Luas Persegi Panjang : " + persegiPanjang.hitungLuas());
+            System.out.println("Luas Persegi Panjang : " + persegiPanjang.getLuasPersegiPanjang()); // mengambil nilai
+                                                                                                    // luas persegi
+                                                                                                    // panjang
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Persegi Panjang tidak bisa dibuat dengan nilai panjang dan lebar yang kurang dari 0.");
@@ -50,7 +52,8 @@ public class Main {
         try {
             JajarGenjang jajarGenjang = new JajarGenjang(5, 3);
             System.out.println("\n+ Jajar Genjang \nalas = 5 & tinggi = 3");
-            System.out.println("Luas Jajar Genjang : " + jajarGenjang.hitungLuas());
+            System.out.println("Luas Jajar Genjang : " + jajarGenjang.getLuasJajarGenjang()); // mengambil nilai luas
+                                                                                              // jajargenjang
         } catch (Exception e) {
             System.out.println("Maaf, Jajar Genjang tidak bisa dibuat dengan nilai alas dan tinggi yang sama.");
         }
@@ -59,7 +62,8 @@ public class Main {
         try {
             LayangLayang layangLayang = new LayangLayang(5, 3);
             System.out.println("\n+ Layang-layang \ndiagonal 1 = 5 & diagonal 2 = 3");
-            System.out.println("Luas Layang-layang : " + layangLayang.hitungLuas());
+            System.out.println("Luas Layang-layang : " + layangLayang.getLuasLayangLayang()); // mengambil nilai luas
+                                                                                              // layang-layang
         } catch (Exception e) {
             System.out.println("Maaf, Layang-layang tidak bisa dibuat dengan nilai diagonal yang sama.");
         }
@@ -68,7 +72,7 @@ public class Main {
         try {
             Trapesium trapesium = new Trapesium(5, 3, 2);
             System.out.println("\n+ Trapesium \nalas atas = 5 , alas bawah = 3, & tinggi = 2");
-            System.out.println("Luas Trapesium : " + trapesium.hitungLuas());
+            System.out.println("Luas Trapesium : " + trapesium.getLuasTrapesium()); // mengambil nilai luas trapesium
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Trapesium tidak bisa dibuat dengan nilai alas bawah dan tinggi yang kurang dari 0.");
@@ -78,7 +82,8 @@ public class Main {
         try {
             BelahKetupat belahKetupat = new BelahKetupat(5, 3);
             System.out.println("\n+ Belah Ketupat \ndiagonal 1 = 5 & diagonal 2 = 3");
-            System.out.println("Luas Belah Ketupat : " + belahKetupat.hitungLuas());
+            System.out.println("Luas Belah Ketupat : " + belahKetupat.getLuasBelahKetupat()); // mengambil niali luas
+                                                                                              // belah ketupat
         } catch (Exception e) {
             System.out.println("Maaf, Belah Ketupat tidak bisa dibuat dengan nilai diagonal yang kurang dari 0.");
         }
@@ -87,7 +92,7 @@ public class Main {
         try {
             Lingkaran lingkaran = new Lingkaran(5);
             System.out.println("\n+ Lingkaran \njari-jari = 5");
-            System.out.println("Luas Lingkaran : " + lingkaran.hitungLuas());
+            System.out.println("Luas Lingkaran : " + lingkaran.getLuasLingkaran()); // mengambil nilai luas lingkaran
         } catch (Exception e) {
             System.out.println("Maaf, Lingkaran tidak bisa dibuat dengan nilai jari-jari yang kurang dari 0.");
         }
@@ -96,7 +101,7 @@ public class Main {
         try {
             Juring juring = new Juring(5, 30);
             System.out.println("\n+ Juring \njari-jari = 5 dengan sudut = 30");
-            System.out.println("Luas Juring : " + juring.hitungLuas());
+            System.out.println("Luas Juring : " + juring.getLuasJuring()); // mengambil nilai luas juring
         } catch (Exception e) {
             System.out.println("Maaf, Juring tidak bisa dibuat dengan nilai jari-jari yang kurang dari 0.");
         }
@@ -105,7 +110,7 @@ public class Main {
         try {
             Tembereng tembereng = new Tembereng(5, 30);
             System.out.println("\n+ Tembereng \njari-jari = 5 dengan sudut = 45");
-            System.out.println("Luas Tembereng : " + tembereng.hitungLuas());
+            System.out.println("Luas Tembereng : " + tembereng.getLuasTembereng()); // mengambil nilai luas tembereng
         } catch (Exception e) {
             System.out.println("Maaf, Tembereng tidak bisa dibuat dengan nilai jari-jari atau sudut yang tidak valid.");
         }
@@ -119,8 +124,8 @@ public class Main {
                     "Prisma Segitiga & Bola Setengah Lingkaran \nalas segitiga = 5, tinggi segitiga = 3, tinggi = 10");
             PrismaSegitiga prismaSegitiga = new PrismaSegitiga(5, 3, 10);
             BolaSetengahSegitiga bolsetSegitiga = new BolaSetengahSegitiga(5, 3, 10);
-            System.out.println("Volume PrismaSegitiga : " + prismaSegitiga.hitungVolume());
-            System.out.println("Volume BolaSetengahSegitiga : " + bolsetSegitiga.hitungVolume());
+            System.out.println("Volume PrismaSegitiga : " + prismaSegitiga.getVolumePrismaSegitiga()); // mengambil nilai volume
+            System.out.println("Volume BolaSetengahSegitiga : " + bolsetSegitiga.getVolumeBolaSetengahSegitiga());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Segitiga dengan nilai yang diberikan.");
         }
@@ -128,9 +133,9 @@ public class Main {
         // Persegi --> Kubus
         try {
             System.out.println("\n+Turunan Persegi");
-            System.out.println("Kubus \nalas sisi = 5, tinggi = 5");
+            System.out.println("Kubus \nsisi = 5");
             Kubus kubus = new Kubus(5, 5);
-            System.out.println("Volume Kubus : " + kubus.getVolumeKubus());
+            System.out.println("Volume Kubus : " + kubus.getVolumeKubus());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, Kubus tidak bisa dibuat dengan nilai sisi yang tidak valid.");
         }
@@ -140,7 +145,7 @@ public class Main {
             System.out.println("\n+Turunan Persegi Panjang");
             System.out.println("Balok \npanjang persegi lebar = 5, lebar persegi panjang = 10, tinggi = 10");
             Balok balok = new Balok(10, 5, 10);
-            System.out.println("Volume Balok : " + balok.hitungVolume());
+            System.out.println("Volume Balok : " + balok.getVolumeBalok()); // mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, Balok tidak bisa dibuat dengan nilai yang tidak valid.");
         }
@@ -150,7 +155,7 @@ public class Main {
             System.out.println("\n+Turunan Layang-Layang");
             System.out.println("Limas Segi Empat \ndiagonal 1 = 5, diagonal 2 = 10, tinggi = 10");
             LimasSegiEmpat limasSegiEmpatL = new LimasSegiEmpat(5, 10, 10);
-            System.out.println("Volume Limas Segi Empat : " + limasSegiEmpatL.hitungVolume());
+            System.out.println("Volume Limas Segi Empat : " + limasSegiEmpatL.getVolumeLimasSegiEmpat()); // mengambil nilai volume
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Limas Segi Empat tidak bisa dibuat dengan nilai diagonal atau tinggi yang tidak valid.");
@@ -161,7 +166,7 @@ public class Main {
             System.out.println("\n+Turunan Belah Ketupat");
             System.out.println("Limas Segi Empat \ndiagonal 1 = 10, diagonal 2 = 10, tinggi = 10");
             LimasSegiEmpat limasSegiEmpatB = new LimasSegiEmpat(10, 10, 10);
-            System.out.println("Volume Limas Segi Empat : " + limasSegiEmpatB.hitungVolume());
+            System.out.println("Volume Limas Segi Empat : " + limasSegiEmpatB.getVolumeLimasSegiEmpat()); // mengambil nilai volume
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Limas Segi Empat tidak bisa dibuat dengan nilai diagonal atau tinggi yang tidak valid.");
@@ -174,8 +179,8 @@ public class Main {
                     "Prisma Jajar Genjang & Bola Setengah Jajar Genjang \nalas segitiga = 5, tinggi segitiga = 3, tinggi = 10");
             PrismaJajarGenjang prismaJajarGenjang = new PrismaJajarGenjang(5, 3, 10);
             BolaSetengahJajarGenjang bolasetJajarGenjang = new BolaSetengahJajarGenjang(5, 3, 10);
-            System.out.println("Volume PrismaJajarGenjang : " + prismaJajarGenjang.hitungVolume());
-            System.out.println("Volume BolaSetengahJajarGenjang : " + bolasetJajarGenjang.hitungVolume());
+            System.out.println("Volume PrismaJajarGenjang : " + prismaJajarGenjang.getVolumePrismaJajarGenjang()); // mengambil nilai volume
+            System.out.println("Volume BolaSetengahJajarGenjang : " + bolasetJajarGenjang.getVolumePrismaJajarGenjang()); // mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Jajar Genjang dengan nilai yang diberikan.");
         }
@@ -185,7 +190,7 @@ public class Main {
             System.out.println("\n+Turunan Trapesium");
             System.out.println("Prisma Trapesium \nalas atas = 5, alas bawah = 5, tinggi trapesium 10, tinggi = 10");
             PrismaTrapesium prismaTrepesium = new PrismaTrapesium(5, 8, 10, 10);
-            System.out.println("Volume Limas Segi Empat : " + prismaTrepesium.hitungVolume());
+            System.out.println("Volume Limas Segi Empat : " + prismaTrepesium.getVolumePrismaTrapesium());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, Prisma Trapesium tidak bisa dibuat dengan nilai yang tidak valid.");
         }
@@ -198,9 +203,9 @@ public class Main {
             Silinder silinder = new Silinder(5, 10);
             Kerucut kerucut = new Kerucut(5, 10);
             Bola bola = new Bola(5);
-            System.out.println("Volume Silinder/Tabung : " + silinder.hitungVolume());
-            System.out.println("Volume Keurucut : " + kerucut.hitungVolume());
-            System.out.println("Volume Bola : " + bola.hitungVolume());
+            System.out.println("Volume Silinder/Tabung : " + silinder.getVolumeSilinder());// mengambil nilai volume
+            System.out.println("Volume Keurucut : " + kerucut.getVolumeKerucut());// mengambil nilai volume
+            System.out.println("Volume Bola : " + bola.getVolumeBola());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Lingkaran dengan nilai yang diberikan.");
         }
@@ -210,7 +215,7 @@ public class Main {
             System.out.println("\n+Turunan Tembereng");
             System.out.println("Bola Setengah Tembereng \njari-jari = 5, sudut = 45");
             BolaSetengahTembereng bolasetTembreng = new BolaSetengahTembereng(4, 45);
-            System.out.println("Volume Bola Setengah Tembereng : " + bolasetTembreng.hitungVolume());
+            System.out.println("Volume Bola Setengah Tembereng : " + bolasetTembreng.getVolumeBolaSetengahTembereng());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Bola Setengah Tembereng tidak bisa dibuat dengan nilai jari-jari atau sudut yang tidak valid.");
@@ -221,11 +226,12 @@ public class Main {
             System.out.println("\n+Turunan Juring");
             System.out.println("Bola Setengah Juring \njari-jari = 5, sudut = 45");
             BolaSetengahJuring bolasetJuring = new BolaSetengahJuring(5, 45);
-            System.out.println("Volume Bola Setengah Juring : " + bolasetJuring.hitungVolume());
+            System.out.println("Volume Bola Setengah Juring : " + bolasetJuring.getVolumeBolaSetengahJuring());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Bola Setengah Juring tidak bisa dibuat dengan nilai jari-jari atau sudut yang tidak valid.");
         }
+
         // // Prisma
         // Prisma prisma = new Prisma(5, 3, 10);
         // System.out.println("\n\nVolume Prisma : " + prisma.hitungVolume());
@@ -233,6 +239,5 @@ public class Main {
         // LimasPersegi limasPersegi = new LimasPersegi(4, 8);
         // System.out.println("Volume Limas Persegi : " +
         // Math.round(limasPersegi.hitungVolume() * 100.0) / 100.0);
-
     }
 }

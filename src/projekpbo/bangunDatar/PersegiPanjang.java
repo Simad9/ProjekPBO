@@ -13,14 +13,15 @@ import projekpbo.Geometri2D;
  */
 public class PersegiPanjang extends Geometri2D {
     // Atribut khusus untuk persegi panjang
-    public double panjang;
-    public double lebar;
-    public double luasPersegiPanjang;
+    private double panjang;
+    private double lebar;
+    private double luasPersegiPanjang;
 
     // Constructor untuk PersegiPanjang
     public PersegiPanjang(double panjang, double lebar) {
         this.panjang = panjang;
         this.lebar = lebar;
+        luasPersegiPanjang = hitungLuas();
     }
 
     // Implementasi metode hitungLuas() untuk persegi panjang
@@ -30,5 +31,9 @@ public class PersegiPanjang extends Geometri2D {
         luasPersegiPanjang = panjang * lebar;
         return luasPersegiPanjang;
     }
-}
 
+    // Getter untuk luas Persegi Panjang
+    public double getLuasPersegiPanjang() {
+        return luasPersegiPanjang;
+    }
+}

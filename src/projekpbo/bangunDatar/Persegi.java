@@ -27,7 +27,7 @@ public class Persegi extends Geometri2D {
         return luasPersegi;
     }
 
-    // Getter untuk luasPersegi
+    // Getter untuk luas Persegi
     public double getLuasPersegi() {
         return luasPersegi;
     }

@@ -13,16 +13,17 @@ import projekpbo.Geometri2D;
  */
 public class Trapesium extends Geometri2D {
     // Atribut khusus untuk trapesium
-    public double alasAtas;
-    public double alasBawah;
-    public double tinggi;
-    public double luasTrapesium;
+    private double alasAtas;
+    private double alasBawah;
+    private double tinggi;
+    private double luasTrapesium;
 
     // Constructor untuk Trapesium
     public Trapesium(double alasAtas, double alasBawah, double tinggi) {
         this.alasAtas = alasAtas;
         this.alasBawah = alasBawah;
         this.tinggi = tinggi;
+        luasTrapesium = hitungLuas();
     }
 
     // Implementasi metode hitungLuas() untuk trapesium
@@ -32,5 +33,9 @@ public class Trapesium extends Geometri2D {
         luasTrapesium = 0.5 * (alasAtas + alasBawah) * tinggi;
         return luasTrapesium;
     }
-}
 
+    // Getter untuk Luas Trapesium
+    public double getLuasTrapesium() {
+        return luasTrapesium;
+    }
+}

@@ -14,11 +14,12 @@ import projekpbo.Geometri2D;
 public class Lingkaran extends Geometri2D {
     // Atribut khusus untuk lingkaran
     public double jariJari;
-    public double luasLingkaran;
+    private double luasLingkaran;
 
     // Constructor untuk Lingkaran
     public Lingkaran(double jariJari) {
         this.jariJari = jariJari;
+        luasLingkaran = hitungLuas();
     }
 
     // Implementasi metode hitungLuas() untuk lingkaran
@@ -28,5 +29,9 @@ public class Lingkaran extends Geometri2D {
         luasLingkaran = Math.PI * jariJari * jariJari;
         return luasLingkaran;
     }
-}
 
+    // Getter untuk Luas Lingkaran
+    public double getLuasLingkaran() {
+        return luasLingkaran;
+    }
+}

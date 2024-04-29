@@ -22,6 +22,7 @@ public class Kubus extends Persegi {
         return volumeKubus;
     }
 
+    // Getter untuk Volume Kubus
     public double getVolumeKubus() {
         return volumeKubus;
     }

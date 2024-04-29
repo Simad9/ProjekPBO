@@ -4,13 +4,14 @@ import projekpbo.bangunDatar.JajarGenjang;
 
 public class PrismaJajarGenjang extends JajarGenjang {
   // Atribut khusus untuk PrismaJajarGenjang
-  public double tinggiPrismaJajarGenjang;
-  public double volumePrismaJajarGenjang;
+  private double tinggiPrismaJajarGenjang;
+  private double volumePrismaJajarGenjang;
 
   // Constructor untuk PrismaJajarGenjang
   public PrismaJajarGenjang(double alas, double tinggi, double tinggiPrismaJajarGenjang) {
     super(alas, tinggi);
     this.tinggiPrismaJajarGenjang = tinggiPrismaJajarGenjang;
+    volumePrismaJajarGenjang = hitungVolume();
   }
 
   // Implementasi metode hitungVolume() untuk PrismaJajarGenjang
@@ -18,6 +19,11 @@ public class PrismaJajarGenjang extends JajarGenjang {
   public double hitungVolume() {
     // Volume PrismaJajarGenjang = luas Jajar Genjang * tinggi PrismaJajarGenjang
     volumePrismaJajarGenjang = hitungLuas() * tinggiPrismaJajarGenjang;
+    return volumePrismaJajarGenjang;
+  }
+
+  // Getter untuk Volume PrismaJajarGenjang
+  public double getVolumePrismaJajarGenjang() {
     return volumePrismaJajarGenjang;
   }
 }

@@ -13,13 +13,14 @@ import projekpbo.bangunDatar.Segitiga;
  */
 public class Prisma extends Segitiga {
     // Atribut khusus untuk prisma
-    public double tinggiPrisma;
-    public double volumePrisma;
+    private double tinggiPrisma;
+    private double volumePrisma;
 
     // Constructor untuk Prisma
     public Prisma(double alas, double tinggi, double tinggiPrisma) {
         super(alas, tinggi);
         this.tinggiPrisma = tinggiPrisma;
+        volumePrisma = hitungVolume();
     }
 
     // Implementasi metode hitungVolume() untuk prisma
@@ -27,6 +28,11 @@ public class Prisma extends Segitiga {
     public double hitungVolume() {
         // Volume prisma segitiga = luas segitiga * tinggiPrisma
         volumePrisma = hitungLuas() * tinggiPrisma;
+        return volumePrisma;
+    }
+
+    // Getter untuk Volume Prisma
+    public double getVolumePrisma() {
         return volumePrisma;
     }
 }

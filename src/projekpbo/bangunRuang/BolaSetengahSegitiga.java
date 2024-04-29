@@ -4,13 +4,14 @@ import projekpbo.bangunDatar.Segitiga;
 
 public class BolaSetengahSegitiga extends Segitiga {
   // Atribut khusus untuk BolaSetengahSegitiga
-  public double tinggiBolaSetengahSegitiga;
-  public double volumeBolaSetengahSegitiga;
+  private double tinggiBolaSetengahSegitiga;
+  private double volumeBolaSetengahSegitiga;
 
   // Constructor untuk BolaSetengahSegitiga
   public BolaSetengahSegitiga(double alas, double tinggi, double tinggiBolaSetengahSegitiga) {
     super(alas, tinggi);
     this.tinggiBolaSetengahSegitiga = tinggiBolaSetengahSegitiga;
+    volumeBolaSetengahSegitiga = hitungVolume();
   }
 
   // Implementasi metode hitungVolume() untuk BolaSetengahSegitiga
@@ -19,6 +20,11 @@ public class BolaSetengahSegitiga extends Segitiga {
     // Volume BolaSetengahSegitiga = 1/3 * luas Segitiga * tinggi
     // BolaSetengahSegitiga
     volumeBolaSetengahSegitiga = (1.0 / 3.0) * hitungLuas() * tinggiBolaSetengahSegitiga;
+    return volumeBolaSetengahSegitiga;
+  }
+
+  // Getter untuk Volume BolaSetengahSegitiga
+  public double getVolumeBolaSetengahSegitiga() {
     return volumeBolaSetengahSegitiga;
   }
 }

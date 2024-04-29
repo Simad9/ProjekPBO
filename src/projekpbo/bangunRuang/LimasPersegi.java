@@ -22,6 +22,7 @@ public class LimasPersegi extends Persegi {
     public LimasPersegi(double sisi, double tinggiLimas) {
         super(sisi);
         this.tinggiLimas = tinggiLimas;
+        volumeLimas = hitungVolume();
     }
 
     // Implementasi metode hitungVolume() untuk limas persegi

@@ -13,14 +13,15 @@ import projekpbo.Geometri2D;
  */
 public class LayangLayang extends Geometri2D {
     // Atribut khusus untuk layang-layang
-    public double diagonal1;
-    public double diagonal2;
-    public double luasLayangLayang;
+    private double diagonal1;
+    private double diagonal2;
+    private double luasLayangLayang;
 
     // Constructor untuk LayangLayang
     public LayangLayang(double diagonal1, double diagonal2) {
         this.diagonal1 = diagonal1;
         this.diagonal2 = diagonal2;
+        luasLayangLayang = hitungLuas();
     }
 
     // Implementasi metode hitungLuas() untuk layang-layang
@@ -28,6 +29,11 @@ public class LayangLayang extends Geometri2D {
     public double hitungLuas() {
         // Rumus luas layang-layang: 0.5 * diagonal1 * diagonal2
         luasLayangLayang = 0.5 * diagonal1 * diagonal2;
+        return luasLayangLayang;
+    }
+
+    // Getter untuk Luas Layang Layang
+    public double getLuasLayangLayang() {
         return luasLayangLayang;
     }
 }
