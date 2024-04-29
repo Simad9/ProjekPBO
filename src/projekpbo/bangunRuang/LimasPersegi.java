@@ -9,12 +9,14 @@ import projekpbo.bangunDatar.Persegi;
 
 /**
  * Wijdan : Ini bisa disebut sebagai Limas Segiempat juga
+ *
  * @author User
  */
 public class LimasPersegi extends Persegi {
+
     // Atribut khusus untuk limas persegi
-    public double tinggiLimas;
-    public double volumeLimas;
+    private final double tinggiLimas;
+    private double volumeLimas;
 
     // Constructor untuk LimasPersegi
     public LimasPersegi(double sisi, double tinggiLimas) {
@@ -26,9 +28,13 @@ public class LimasPersegi extends Persegi {
     @Override
     public double hitungVolume() {
         // Volume limas persegi = (1/3) * luas alas * tinggiLimas
-        // volumeLimas = (1.0 / 3.0) * hitungLuas() * tinggiLimas;
-        luasPersegi = hitungLuas();
-        volumeLimas = (1.0 / 3.0) * luasPersegi * tinggiLimas;
+        volumeLimas = (1.0 / 3.0) * hitungLuas() * tinggiLimas;
+        return volumeLimas;
+    }
+
+    // Getter untuk volumeLimas
+    public double getVolumeLimas() {
         return volumeLimas;
     }
 }
+

@@ -130,7 +130,7 @@ public class Main {
             System.out.println("\n+Turunan Persegi");
             System.out.println("Kubus \nalas sisi = 5, tinggi = 5");
             Kubus kubus = new Kubus(5, 5);
-            System.out.println("Volume Kubus : " + kubus.hitungVolume());
+            System.out.println("Volume Kubus : " + kubus.getVolumeKubus());
         } catch (Exception e) {
             System.out.println("Maaf, Kubus tidak bisa dibuat dengan nilai sisi yang tidak valid.");
         }

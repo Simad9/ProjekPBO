@@ -1,24 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package projekpbo.bangunDatar;
 
 import projekpbo.Geometri2D;
 
 /**
+ * Kelas Persegi yang merepresentasikan bentuk bangun datar Persegi
  *
  * @author User
  */
 public class Persegi extends Geometri2D {
+
     // Atribut khusus untuk persegi
-    public double sisi;
-    public double luasPersegi;
+    private final double sisi;
+    private double luasPersegi;
 
     // Constructor untuk Persegi
     public Persegi(double sisi) {
         this.sisi = sisi;
+        luasPersegi = hitungLuas();
     }
 
     // Implementasi metode hitungLuas() untuk persegi
@@ -28,4 +26,10 @@ public class Persegi extends Geometri2D {
         luasPersegi = sisi * sisi;
         return luasPersegi;
     }
+
+    // Getter untuk luasPersegi
+    public double getLuasPersegi() {
+        return luasPersegi;
+    }
 }
+
