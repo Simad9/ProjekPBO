@@ -7,6 +7,7 @@ public class Silinder extends Lingkaran {
   private double tinggiSilinder;
   private double volumeSilinder;
   private double luasPermukaanSilinder;
+
   // Constructor untuk Silinder
   public Silinder(double jariJari, double tinggiSilinder) {
     super(jariJari);
@@ -27,16 +28,17 @@ public class Silinder extends Lingkaran {
   public double getVolumeSilinder() {
     return volumeSilinder;
   }
-  
+
   // Implementasi metode hitungLuasPermukaan() untuk Silinder
-    @Override
-    public double hitungLuasPermukaan() {
-        // Luas Permukaan Silinder = 2 * luas Lingkaran + keliling Lingkaran * tinggi Silinder
-        luasPermukaanSilinder = 2 * hitungLuas() + hitungKeliling() * tinggiSilinder;
-        return luasPermukaanSilinder;
-    }
-    
-    public double getLuasPermukaanSilinder(){
-        return luasPermukaanSilinder;
-    }
+  @Override
+  public double hitungLuasPermukaan() {
+    // Luas Permukaan Silinder = 2 * luas Lingkaran + keliling Lingkaran * tinggi
+    // Silinder
+    luasPermukaanSilinder = 2 * hitungLuas() + hitungKeliling() * tinggiSilinder;
+    return luasPermukaanSilinder;
+  }
+
+  public double getLuasPermukaanSilinder() {
+    return luasPermukaanSilinder;
+  }
 }
