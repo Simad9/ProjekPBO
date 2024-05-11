@@ -4,8 +4,7 @@ import projekpbo.bangunRuang.Bola;
 
 public class Tembereng extends Bola {
   // Atribut khusus untuk Tembereng
-  public double jariJari;
-  public double theta;
+  private double theta;
   private double luasTembereng;
   private double kelilingTembereng;
 

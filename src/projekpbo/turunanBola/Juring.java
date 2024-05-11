@@ -4,22 +4,21 @@ import projekpbo.bangunRuang.Bola;
 
 public class Juring extends Bola {
   // Atribut khusus untuk Juring
-  public double jariJari;
-  public double theta;
+  private double theta;
   private double luasJuring;
   private double kelilingJuring;
 
   // Constructor untuk Juring
   public Juring(double jariJari, double theta) {
     super(jariJari);
-    this.theta = Math.toRadians(theta);
+    this.theta = theta;
     luasJuring = hitungLuas();
     kelilingJuring = hitungKeliling();
   }
 
   @Override
   public double hitungLuas() {
-    luasJuring = 0.5 * jariJari * jariJari * theta;
+    luasJuring = 0.5 * jariJari * jariJari * Math.toRadians(theta);
     return luasJuring;
   }
 
@@ -30,7 +29,6 @@ public class Juring extends Bola {
 
   @Override
   public double hitungKeliling() {
-    // Keliling Juring = 2 * pi * r
     kelilingJuring = jariJari * (theta + 2);
     return kelilingJuring;
   }
@@ -40,3 +38,4 @@ public class Juring extends Bola {
   }
 
 }
+

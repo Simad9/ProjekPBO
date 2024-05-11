@@ -1,16 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package projekpbo;
 
 import projekpbo.bangunDatar.*;
 import projekpbo.bangunRuang.*;
+import projekpbo.turunanBola.*;
 
 /**
- *
- * @author User
+ * @author Wijdan dan Rio
  */
 public class Main {
     public static void main(String[] args) {
@@ -209,6 +204,35 @@ public class Main {
             System.out.println("Volume Bola : " + bola.getVolumeBola());// mengambil nilai volume
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Lingkaran dengan nilai yang diberikan.");
+        }
+
+        // ======= Turunan Bola =======
+        System.out.println("\n=== Turunan Bola ===");
+        try {
+            System.out.println("Juring, Tembereng, Cincin Bola");
+            System.out.println(
+                    "jari-jari = 5 \ntheta = 60 derajat \njari-jari Dalam = 3 \njarak jari-jari luar dan dalam = 5\n");
+            // Insialisasi semua
+            Juring juring = new Juring(5, 60);
+            Tembereng tembereng = new Tembereng(5, 60);
+            CincinBola cincinBola = new CincinBola(5, 3, 5);
+            // Cetak
+            System.out.println("Juring : ");
+            System.out.println("Luas Juring : " + juring.getLuasJuring()); // Luas Juring
+            System.out.println("Keliling Juring : " + juring.getKelilingJuring()); // Keliling Juring
+            System.out.println();
+
+            System.out.println("Tembereng : ");
+            System.out.println("Luas Tembereng : " + tembereng.getLuasTembereng()); // Luas Tembereng
+            System.out.println("Keliling Tembereng : " + tembereng.getKelilingTembereng()); // Keliling Tembereng
+            System.out.println();
+
+            System.out.println("CincinBola : ");
+            System.out.println("Volume CincinBola : " + cincinBola.getVolumeCincinBola()); // Volume CincinBola
+            System.out.println("Luas Permukaan CincinBola : " + cincinBola.getLuasPermukaanCincinBola()); // Luas Permukaan CincinBola
+            System.out.println();
+        } catch (Exception e) {
+            System.out.println("Maaf, tidak bisa membuat turunan Bola dengan nilai yang diberikan.");
         }
 
         // // Prisma

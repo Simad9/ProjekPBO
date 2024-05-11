@@ -1,39 +1,42 @@
 package projekpbo.turunanBola;
 
-public class CincinBola {
+import projekpbo.bangunRuang.Bola;
+
+public class CincinBola extends Bola {
   // Atribut khusus untuk Juring
-  public double jariJari;
-  public double theta;
-  private double luasJuring;
-  private double kelilingJuring;
+  private double jariJariDalam; // dari Lingkaran Jarijari Dalam
+  private double jarakDuaBidang; // jarak jari jari luat dan jari jari dalam
+  private double volumeCincinBola;
+  private double luasPermukaanCincinBola;
 
   // Constructor untuk Juring
-  public Juring(double jariJari, double theta) {
+  public CincinBola(double jariJari, double jariJariDalam, double jarakDuaBidang) {
     super(jariJari);
-    this.theta = Math.toRadians(theta);
-    luasJuring = hitungLuas();
-    kelilingJuring = hitungKeliling();
+    this.jariJariDalam = jariJariDalam;
+    this.jarakDuaBidang = jarakDuaBidang;
+    volumeCincinBola = hitungVolume();
+    luasPermukaanCincinBola = hitungLuasPermukaan();
   }
 
   @Override
   public double hitungVolume() {
-    luasJuring = 0.5 * jariJari * jariJari * theta;
-    return luasJuring;
+    volumeCincinBola = Math.PI * jarakDuaBidang
+        * (jariJariDalam * jariJariDalam + jariJari * jariJari + jariJariDalam * jariJari);
+    return volumeCincinBola;
   }
 
-  // Getter untuk Luas Juring
-  public double getLuasJuring() {
-    return luasJuring;
+  public double getVolumeCincinBola() {
+    return volumeCincinBola;
   }
 
   @Override
   public double hitungLuasPermukaan() {
-    // Keliling Juring = 2 * pi * r
-    kelilingJuring = jariJari * (theta + 2);
-    return kelilingJuring;
+    luasPermukaanCincinBola = 2 * Math.PI * jariJari * jarakDuaBidang;
+    return luasPermukaanCincinBola;
   }
 
-  public double getKelilingJuring() {
-    return kelilingJuring;
+  public double getLuasPermukaanCincinBola() {
+    return luasPermukaanCincinBola;
   }
+
 }
