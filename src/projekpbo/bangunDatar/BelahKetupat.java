@@ -13,7 +13,7 @@ import projekpbo.Geometri2D;
  */
 public class BelahKetupat extends Geometri2D {
     // Atribut khusus untuk belah ketupat
-    private double diagonal1;
+    public double diagonal1;
     private double luasBelahKetupat;
     private double kelilingBelahKetupat;
 

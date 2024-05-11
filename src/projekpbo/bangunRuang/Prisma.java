@@ -15,12 +15,14 @@ public class Prisma extends Segitiga {
     // Atribut khusus untuk prisma
     private double tinggiPrisma;
     private double volumePrisma;
+    private double luasPermukaanPrisma;
 
     // Constructor untuk Prisma
     public Prisma(double alas, double tinggi, double tinggiPrisma) {
         super(alas, tinggi);
         this.tinggiPrisma = tinggiPrisma;
         volumePrisma = hitungVolume();
+        luasPermukaanPrisma = hitungLuasPermukaan();
     }
 
     // Implementasi metode hitungVolume() untuk prisma
@@ -35,4 +37,17 @@ public class Prisma extends Segitiga {
     public double getVolumePrisma() {
         return volumePrisma;
     }
+    
+    // Implementasi metode hitungLuasPermukaan() untuk Prisma
+    @Override
+    public double hitungLuasPermukaan() {
+        // Luas Permukaan Prisma = (2 * luas alas) + (kelilingsegitiga * tinggi)
+        luasPermukaanPrisma = (2 * hitungLuas()) + (getKelilingSegitiga() * tinggiPrisma);
+        return luasPermukaanPrisma;
+    }
+    
+    public double getLuasPermukaanPrisma(){
+        return luasPermukaanPrisma;
+    }
 }
+

@@ -6,12 +6,14 @@ public class Kerucut extends Lingkaran {
   // Atribut khusus untuk Kerucut
   private double tinggiKerucut;
   private double volumeKerucut;
+  private double luasPermukaanKerucut;
 
   // Constructor untuk Kerucut
   public Kerucut(double jariJari, double tinggiKerucut) {
     super(jariJari);
     this.tinggiKerucut = tinggiKerucut;
     volumeKerucut = hitungVolume();
+    luasPermukaanKerucut = hitungLuasPermukaan();
   }
 
   // Implementasi metode hitungVolume() untuk Kerucut
@@ -26,4 +28,17 @@ public class Kerucut extends Lingkaran {
   public double getVolumeKerucut() {
     return volumeKerucut;
   }
+  
+  // Implementasi metode hitungLuasPermukaan() untuk Kerucut
+  @Override
+  public double hitungLuasPermukaan() {
+    // Luas Permukaan Kerucut = luas alas + luas selimut
+    luasPermukaanKerucut =  hitungLuas() + (Math.PI * jariJari * Math.sqrt(Math.pow(tinggiKerucut, 2) + Math.pow(jariJari, 2)));
+    return luasPermukaanKerucut;
+  }
+  
+  public double getLuasPermukaanKerucut(){
+    return luasPermukaanKerucut;
+  }
+
 }

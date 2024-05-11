@@ -5,11 +5,13 @@ import projekpbo.bangunDatar.Lingkaran;
 public class Bola extends Lingkaran {
   // Atribut khusus untuk Bola
   private double volumeBola;
+  private double luasPermukaanBola;
 
   // Constructor untuk Bola
   public Bola(double jariJari) {
     super(jariJari);
     volumeBola = hitungVolume();
+    luasPermukaanBola = hitungLuasPermukaan();
   }
 
   // Implementasi metode hitungVolume() untuk Bola
@@ -24,4 +26,17 @@ public class Bola extends Lingkaran {
   public double getVolumeBola() {
     return volumeBola;
   }
+  
+  // Implementasi metode hitungLuasPermukaan() untuk Bola
+  @Override
+  public double hitungLuasPermukaan() {
+    // Luas Permukaan Bola = 4 * Phi * r^2
+    luasPermukaanBola = 4 * Math.PI * Math.pow(jariJari, 2);
+    return luasPermukaanBola;
+  }
+  
+  public double getLuasPermukaanBola(){
+    return luasPermukaanBola;
+  }
+
 }

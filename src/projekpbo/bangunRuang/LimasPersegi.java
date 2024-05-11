@@ -17,12 +17,14 @@ public class LimasPersegi extends Persegi {
     // Atribut khusus untuk limas persegi
     private final double tinggiLimas;
     private double volumeLimas;
+    private double luasPermukaanLimas;
 
     // Constructor untuk LimasPersegi
     public LimasPersegi(double sisi, double tinggiLimas) {
         super(sisi);
         this.tinggiLimas = tinggiLimas;
         volumeLimas = hitungVolume();
+        luasPermukaanLimas = hitungLuasPermukaan();
     }
 
     // Implementasi metode hitungVolume() untuk limas persegi
@@ -37,5 +39,18 @@ public class LimasPersegi extends Persegi {
     public double getVolumeLimas() {
         return volumeLimas;
     }
+    
+    // Implementasi metode hitungLuasPermukaan() untuk LimasPersegi
+    @Override
+    public double hitungLuasPermukaan() {
+        // Luas Permukaan Limas Persegi = luas alas + jumlah luas sisi tegak
+        luasPermukaanLimas = hitungLuas() + (4 * ((sisi * tinggiLimas)/2));
+        return luasPermukaanLimas;
+    }
+    
+    public double getLuasPermukaanLimas(){
+        return luasPermukaanLimas;
+    }
+
 }
 

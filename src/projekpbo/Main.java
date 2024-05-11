@@ -116,6 +116,8 @@ public class Main {
             PrismaSegitiga prismaSegitiga = new PrismaSegitiga(5, 3, 10);
             System.out.println("Volume PrismaSegitiga : " + prismaSegitiga.getVolumePrismaSegitiga()); // mengambil
                                                                                                        // nilai volume
+            System.out.println("Luas Permukaan PrismaSegitiga : " + prismaSegitiga.getLuasPermukaanPrismaSegitiga()); 
+                                                                                                                                                                                                  
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Segitiga dengan nilai yang diberikan.");
         }
@@ -126,6 +128,7 @@ public class Main {
             System.out.println("Kubus \nsisi = 5");
             Kubus kubus = new Kubus(5, 5);
             System.out.println("Volume Kubus : " + kubus.getVolumeKubus());// mengambil nilai volume
+            System.out.println("Luas Permukaan Kubus : " + kubus.getLuasPermukaanKubus());
         } catch (Exception e) {
             System.out.println("Maaf, Kubus tidak bisa dibuat dengan nilai sisi yang tidak valid.");
         }
@@ -136,6 +139,7 @@ public class Main {
             System.out.println("Balok \npanjang persegi lebar = 5, lebar persegi panjang = 10, tinggi = 10");
             Balok balok = new Balok(10, 5, 10);
             System.out.println("Volume Balok : " + balok.getVolumeBalok()); // mengambil nilai volume
+            System.out.println("Luas Permukaan Balok : " + balok.getLuasPermukaanBalok());
         } catch (Exception e) {
             System.out.println("Maaf, Balok tidak bisa dibuat dengan nilai yang tidak valid.");
         }
@@ -148,6 +152,7 @@ public class Main {
             System.out.println("Volume Limas Segi Empat : " + limasSegiEmpatL.getVolumeLimasSegiEmpat()); // mengambil
                                                                                                           // nilai
                                                                                                           // volume
+            System.out.println("Luas Permukaan Limas Segi Empat : " + limasSegiEmpatL.getLuasPermukaanLimasSegiEmpat());                                                                                              
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Limas Segi Empat tidak bisa dibuat dengan nilai diagonal atau tinggi yang tidak valid.");
@@ -161,6 +166,7 @@ public class Main {
             System.out.println("Volume Limas Segi Empat : " + limasSegiEmpatB.getVolumeLimasSegiEmpat()); // mengambil
                                                                                                           // nilai
                                                                                                           // volume
+            System.out.println("Luas Permukaan Limas Segi Empat : " + limasSegiEmpatB.getLuasPermukaanLimasSegiEmpat());                                                                                              
         } catch (Exception e) {
             System.out.println(
                     "Maaf, Limas Segi Empat tidak bisa dibuat dengan nilai diagonal atau tinggi yang tidak valid.");
@@ -175,6 +181,7 @@ public class Main {
             System.out.println("Volume PrismaJajarGenjang : " + prismaJajarGenjang.getVolumePrismaJajarGenjang()); // mengambil
                                                                                                                    // nilai
                                                                                                                    // volume
+            System.out.println("Luas Permukaan PrismaJajarGenjang : " + prismaJajarGenjang.getLuasPermukaanPrismaJajarGenjang());                                                                                                       
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Jajar Genjang dengan nilai yang diberikan.");
         }
@@ -187,6 +194,7 @@ public class Main {
             System.out.println("Volume Limas Segi Empat : " + prismaTrepesium.getVolumePrismaTrapesium());// mengambil
                                                                                                           // nilai
                                                                                                           // volume
+            System.out.println("Luas Permukaan Limas Segi Empat : " + prismaTrepesium.getLuasPermukaanPrismaTrapesium());                                                                                                
         } catch (Exception e) {
             System.out.println("Maaf, Prisma Trapesium tidak bisa dibuat dengan nilai yang tidak valid.");
         }
@@ -200,8 +208,10 @@ public class Main {
             Kerucut kerucut = new Kerucut(5, 10);
             Bola bola = new Bola(5);
             System.out.println("Volume Silinder/Tabung : " + silinder.getVolumeSilinder());// mengambil nilai volume
+            System.out.println("Luas Permukaan Silinder : " + silinder.getLuasPermukaanSilinder());
             System.out.println("Volume Keurucut : " + kerucut.getVolumeKerucut());// mengambil nilai volume
             System.out.println("Volume Bola : " + bola.getVolumeBola());// mengambil nilai volume
+
         } catch (Exception e) {
             System.out.println("Maaf, tidak bisa membuat turunan Lingkaran dengan nilai yang diberikan.");
         }

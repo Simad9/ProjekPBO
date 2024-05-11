@@ -6,12 +6,14 @@ public class LimasSegiEmpat extends BelahKetupat {
   // Atribut khusus untuk LimasSegiEmpat
   private double tinggiLimasSegiEmpat;
   private double volumeLimasSegiEmpat;
+  private double luasPermukaanSegiEmpat;
 
   // Constructor untuk LimasSegiEmpat
   public LimasSegiEmpat(double diagonal1, double tinggiLimasSegiEmpat) {
     super(diagonal1);
     this.tinggiLimasSegiEmpat = tinggiLimasSegiEmpat;
     volumeLimasSegiEmpat = hitungVolume();
+    luasPermukaanSegiEmpat = hitungLuasPermukaan();
   }
 
   // Implementasi metode hitungVolume() untuk LimasSegiEmpat
@@ -26,4 +28,16 @@ public class LimasSegiEmpat extends BelahKetupat {
   public double getVolumeLimasSegiEmpat() {
     return volumeLimasSegiEmpat;
   }
+  
+  // Implementasi metode hitungLuasPermukaan() untuk LimasPersegi
+    @Override
+    public double hitungLuasPermukaan() {
+        // Luas Permukaan Limas segi empat = luas alas + jumlah luas sisi tegak
+        luasPermukaanSegiEmpat = hitungLuas() + (4 * ((diagonal1 * tinggiLimasSegiEmpat)/2));
+        return luasPermukaanSegiEmpat;
+    }
+    
+    public double getLuasPermukaanLimasSegiEmpat(){
+        return luasPermukaanSegiEmpat;
+    }
 }
