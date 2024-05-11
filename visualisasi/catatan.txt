@@ -8,7 +8,7 @@ PersegiPanjang.java✅
 Lingkaran.java✅
 Segitiga.java✅
 Tembereng.java✅
-SektorLingkaran.java✅
+Juring.java✅
 
 BanguRuang :
 PrismaJajarGenjang.Java✅
@@ -22,6 +22,6 @@ Bola.java✅
 PrismaSegitiga✅
 BolaSetengahSegitiga.java✅
 BolaSetengahTembereng.java✅
-BolaSetengahSektorLingkaran.java✅
+BolaSetengahJuring.java✅
 
 https://chat.openai.com/share/33c8d52a-6246-4109-a0d3-3da2428a26ad
