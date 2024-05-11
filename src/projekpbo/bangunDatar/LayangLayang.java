@@ -16,12 +16,14 @@ public class LayangLayang extends Geometri2D {
     private double diagonal1;
     private double diagonal2;
     private double luasLayangLayang;
+    private double kelilingLayangLayang;
 
     // Constructor untuk LayangLayang
     public LayangLayang(double diagonal1, double diagonal2) {
         this.diagonal1 = diagonal1;
         this.diagonal2 = diagonal2;
         luasLayangLayang = hitungLuas();
+        kelilingLayangLayang = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk layang-layang
@@ -35,5 +37,16 @@ public class LayangLayang extends Geometri2D {
     // Getter untuk Luas Layang Layang
     public double getLuasLayangLayang() {
         return luasLayangLayang;
+    }
+
+    @Override
+    public double hitungKeliling() {
+        kelilingLayangLayang = 2 * (diagonal1 + diagonal2);
+        return kelilingLayangLayang;
+    }
+
+    // Getter untuk keliling Layang Layang
+    public double getKelilingLayangLayang() {
+        return kelilingLayangLayang;
     }
 }

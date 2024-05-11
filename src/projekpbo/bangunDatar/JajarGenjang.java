@@ -16,12 +16,14 @@ public class JajarGenjang extends Geometri2D {
     private double alas;
     private double tinggi;
     private double luasJajarGenjang;
+    private double kelilingJajarGenjang;
 
     // Constructor untuk JajarGenjang
     public JajarGenjang(double alas, double tinggi) {
         this.alas = alas;
         this.tinggi = tinggi;
         luasJajarGenjang = hitungLuas();
+        kelilingJajarGenjang = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk jajar genjang
@@ -31,8 +33,21 @@ public class JajarGenjang extends Geometri2D {
         luasJajarGenjang = alas * tinggi;
         return luasJajarGenjang;
     }
+
     // Getter untuk Luas Jajar Genjang
     public double getLuasJajarGenjang() {
         return luasJajarGenjang;
     }
+
+    @Override
+    public double hitungKeliling() {
+        // Rumus keliling jajar genjang: 2 * (alas + tinggi) ???
+        kelilingJajarGenjang = 2 * (alas + tinggi);
+        return kelilingJajarGenjang;
+    }
+
+    public double getKelilingJajarGenjang() {
+        return kelilingJajarGenjang;
+    }
+
 }

@@ -12,11 +12,15 @@ package projekpbo;
 public abstract class Geometri2D implements BendaGeometri {
     // Atribut yang umum untuk benda geometri 2D
     // Dapat diubah sesuai dengan kebutuhan
-    
+
     // Implementasi metode hitungVolume() untuk geometri 2D
     @Override
     public double hitungVolume() {
         return 0; // Volume benda 2D adalah nol
     }
-}
 
+    @Override
+    public double hitungLuasPermukaan() {
+        return 0;
+    }
+}

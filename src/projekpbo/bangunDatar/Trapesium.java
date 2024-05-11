@@ -17,6 +17,7 @@ public class Trapesium extends Geometri2D {
     private double alasBawah;
     private double tinggi;
     private double luasTrapesium;
+    private double kelilingTrapesium;
 
     // Constructor untuk Trapesium
     public Trapesium(double alasAtas, double alasBawah, double tinggi) {
@@ -24,6 +25,7 @@ public class Trapesium extends Geometri2D {
         this.alasBawah = alasBawah;
         this.tinggi = tinggi;
         luasTrapesium = hitungLuas();
+        kelilingTrapesium = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk trapesium
@@ -38,4 +40,17 @@ public class Trapesium extends Geometri2D {
     public double getLuasTrapesium() {
         return luasTrapesium;
     }
+
+    // Implementasi metode hitungKeliling() untuk trapesium
+    @Override
+    public double hitungKeliling() {
+        kelilingTrapesium = 2 * (alasAtas + alasBawah) + 2 * tinggi;
+        return kelilingTrapesium;
+    }
+
+    // Getter untuk Keliling Trapesium
+    public double getKelilingTrapesium() {
+        return kelilingTrapesium;
+    }
+
 }

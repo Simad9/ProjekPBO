@@ -16,12 +16,14 @@ public class PersegiPanjang extends Geometri2D {
     private double panjang;
     private double lebar;
     private double luasPersegiPanjang;
+    private double kelilingPersegiPanjang;
 
     // Constructor untuk PersegiPanjang
     public PersegiPanjang(double panjang, double lebar) {
         this.panjang = panjang;
         this.lebar = lebar;
         luasPersegiPanjang = hitungLuas();
+        kelilingPersegiPanjang = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk persegi panjang
@@ -36,4 +38,17 @@ public class PersegiPanjang extends Geometri2D {
     public double getLuasPersegiPanjang() {
         return luasPersegiPanjang;
     }
+
+    @Override
+    public double hitungKeliling() {
+        // Keliling Persegi Panjang = 2 * (panjang + lebar)
+        kelilingPersegiPanjang = 2 * (panjang + lebar);
+        return kelilingPersegiPanjang;
+    }
+
+    // Getter untuk keliling Persegi Panjang
+    public double getKelilingPersegiPanjang() {
+        return kelilingPersegiPanjang;
+    }
+
 }

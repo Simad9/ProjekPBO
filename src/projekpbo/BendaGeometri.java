@@ -10,6 +10,11 @@ package projekpbo;
  * @author User
  */
 public interface BendaGeometri {
+    // Untuk Bangun Datar menghitung luas dan keliling
     double hitungLuas();
+    double hitungKeliling();
+
+    // Untuk Bangun Ruang menghitung volume dan luas permukaan
     double hitungVolume();
+    double hitungLuasPermukaan();
 }

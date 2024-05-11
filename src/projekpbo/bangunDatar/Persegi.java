@@ -12,11 +12,13 @@ public class Persegi extends Geometri2D {
     // Atribut khusus untuk persegi
     private final double sisi;
     private double luasPersegi;
+    private double kelilingPersegi;
 
     // Constructor untuk Persegi
     public Persegi(double sisi) {
         this.sisi = sisi;
         luasPersegi = hitungLuas();
+        kelilingPersegi = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk persegi
@@ -31,5 +33,15 @@ public class Persegi extends Geometri2D {
     public double getLuasPersegi() {
         return luasPersegi;
     }
-}
 
+    @Override
+    public double hitungKeliling() {
+        kelilingPersegi = 4 * sisi;
+        return kelilingPersegi;
+    }
+
+    public double getKelilingPersegi() {
+        return kelilingPersegi;
+    }
+
+}

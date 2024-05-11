@@ -8,8 +8,8 @@ public class LimasSegiEmpat extends BelahKetupat {
   private double volumeLimasSegiEmpat;
 
   // Constructor untuk LimasSegiEmpat
-  public LimasSegiEmpat(double diagonal1, double diagonal2, double tinggiLimasSegiEmpat) {
-    super(diagonal1, diagonal2);
+  public LimasSegiEmpat(double diagonal1, double tinggiLimasSegiEmpat) {
+    super(diagonal1);
     this.tinggiLimasSegiEmpat = tinggiLimasSegiEmpat;
     volumeLimasSegiEmpat = hitungVolume();
   }

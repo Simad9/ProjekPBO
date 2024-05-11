@@ -15,12 +15,14 @@ public class Segitiga extends Geometri2D {
     private double alas;
     private double tinggi;
     private double luasSegitiga;
+    private double kelilingSegitiga;
 
     // Constructor untuk Segitiga
     public Segitiga(double alas, double tinggi) {
         this.alas = alas;
         this.tinggi = tinggi;
         luasSegitiga = hitungLuas();
+        kelilingSegitiga = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk segitiga
@@ -35,4 +37,19 @@ public class Segitiga extends Geometri2D {
     public double getLuasSegitiga() {
         return luasSegitiga;
     }
+
+    @Override
+    public double hitungKeliling() {
+        // Rumus keliling segitiga: 3 * alas - segitiga sama sisi
+        kelilingSegitiga = 3 * alas;
+        return kelilingSegitiga;
+    }
+
+    // Getter untuk Keliling Segitiga
+    public double getKelilingSegitiga() {
+      return kelilingSegitiga;
+    }
+
+    
+
 }

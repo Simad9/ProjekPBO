@@ -14,26 +14,39 @@ import projekpbo.Geometri2D;
 public class BelahKetupat extends Geometri2D {
     // Atribut khusus untuk belah ketupat
     private double diagonal1;
-    private double diagonal2;
     private double luasBelahKetupat;
+    private double kelilingBelahKetupat;
 
     // Constructor untuk BelahKetupat
-    public BelahKetupat(double diagonal1, double diagonal2) {
+    public BelahKetupat(double diagonal1) {
         this.diagonal1 = diagonal1;
-        this.diagonal2 = diagonal2;
-        luasBelahKetupat = hitungLuas(); //naruhkan metode hitungLuas()
+        luasBelahKetupat = hitungLuas(); // naruhkan metode hitungLuas()
+        kelilingBelahKetupat = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk belah ketupat
     @Override
     public double hitungLuas() {
         // Rumus luas belah ketupat: 0.5 * diagonal1 * diagonal2
-        luasBelahKetupat = 0.5 * diagonal1 * diagonal2;
+        luasBelahKetupat = 0.5 * diagonal1 * diagonal1;
         return luasBelahKetupat;
     }
 
     // Getter untuk Luas Belah Ketupat
-    public double getLuasBelahKetupat(){
+    public double getLuasBelahKetupat() {
         return luasBelahKetupat;
+    }
+
+    // Implementasi metode hitungKeliling() untuk belah ketupat
+    @Override
+    public double hitungKeliling() {
+        // Rumus keliling belah ketupat: 4 * diagonal1
+        kelilingBelahKetupat = 4 * diagonal1;
+        return kelilingBelahKetupat;
+    }
+
+    // Getter untuk Keliling Belah Ketupat
+    public double getKelilingBelahKetupat() {
+        return kelilingBelahKetupat;
     }
 }

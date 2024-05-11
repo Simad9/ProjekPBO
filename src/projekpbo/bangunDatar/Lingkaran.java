@@ -15,11 +15,13 @@ public class Lingkaran extends Geometri2D {
     // Atribut khusus untuk lingkaran
     public double jariJari;
     private double luasLingkaran;
+    private double kelilingLingkaran;
 
     // Constructor untuk Lingkaran
     public Lingkaran(double jariJari) {
         this.jariJari = jariJari;
         luasLingkaran = hitungLuas();
+        kelilingLingkaran = hitungKeliling();
     }
 
     // Implementasi metode hitungLuas() untuk lingkaran
@@ -34,4 +36,15 @@ public class Lingkaran extends Geometri2D {
     public double getLuasLingkaran() {
         return luasLingkaran;
     }
+
+    @Override
+    public double hitungKeliling() {
+        kelilingLingkaran = 2 * Math.PI * jariJari;
+        return kelilingLingkaran;
+    }
+
+    public double getKelilingLingkaran() {
+        return kelilingLingkaran;
+    }
+
 }
